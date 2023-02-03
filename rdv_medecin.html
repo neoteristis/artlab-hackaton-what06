@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Trainers - Mentor Bootstrap Template</title>
+  <title>Contactez nous</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -37,6 +37,7 @@
 </head>
 
 <body>
+
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
@@ -54,7 +55,7 @@
    
            
          
-          <!-- <li><a href="contact.html">Contact</a></li> -->
+          <li><a href="contact.html">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -64,82 +65,59 @@
     </div>
   </header><!-- End Header -->
 
-  <main id="main" data-aos="fade-in">
+
+  <main id="main">
 
     <!-- ======= Breadcrumbs ======= -->
-    <div class="breadcrumbs">
+    <div class="breadcrumbs" data-aos="fade-in">
       <div class="container">
-        <h2>Artistes</h2>
-        <h3>Chacun de nos cours sont conçus pour être accessibles et inclusifs pour les personnes en situation de handicap, permettant à chacun de s'exprimer à travers l'art </h3>
+        <h2>Prenez rendez-vous</h2>
+        <h3>Notre page de Téléconsultation est à votre disposition pour toute question ou préoccupation. Utilisez notre formulaire en ligne, adresse email, numéro de téléphone ou adresse postale pour nous contacter, nous vous répondrons dès que possible. </h3>
       </div>
     </div><!-- End Breadcrumbs -->
 
-    <!-- ======= Trainers Section ======= -->
-    <section id="trainers" class="trainers">
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      
+
       <div class="container" data-aos="fade-up">
 
-        <div class="row" data-aos="zoom-in" data-aos-delay="100">
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="member">
-              <img src="assets/img/course-1.jpg" class="img-fluid" alt="">
-              <div class="member-content">
-                <h4>Walter White</h4>
-                <span>Peintre</span>
-                <p>
-                  "Je suis un artiste peintre professionnel et j'enseigne des cours de peinture pour tous les niveaux. J'aime utiliser des couleurs vives et des formes abstraites pour exprimer des émotions et des histoires uniques. J'adore enseigner aux élèves en situation de handicap et les aider à découvrir leur propre style de peinture."    
-                </p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="row mt-5">
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="member">
-              <img src="assets/img/course-2.jpg" class="img-fluid" alt="">
-              <div class="member-content">
-                <h4>Sarah Jhinson</h4>
-                <span>Illustratrice</span>
-                <p>
-                  "Je suis illustratrice professionnelle et j'enseigne des cours de dessin pour les débutants et les intermédiaires. Je me concentre sur l'apprentissage des techniques de base pour créer des illustrations fantastiques. J'aime enseigner aux élèves en situation de handicap et les aider à découvrir leur potentiel créatif."
-                </p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div class="col-lg-8 mt-5 mt-lg-0">
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="member">
-              <img src="assets/img/course-3.jpg" class="img-fluid" alt="">
-              <div class="member-content">
-                <h4>William Anderson</h4>
-                <span>Graphiste</span>
-                <p>
-                  "Je suis un auteur de bande dessinée professionnel et j'enseigne des cours de bande dessinée pour les personnes intéressées à raconter des histoires à travers les images. J'aime enseigner les techniques pour créer des personnages et des histoires captivantes. J'aime enseigner aux élèves en situation de handicap et les aider à découvrir leur passion pour la bande dessinée."
-                </p>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Votre nom" required>
                 </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Votre email" required>
+                </div>
+				<div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="tel" class="form-control" name="phone" id="phone" placeholder="Votre téléphone" >
+                </div> <div class="text-center"><button type="submit">Être rappelé</button></div>
               </div>
-            </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Sujet" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Vos symptômes" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Votre message est envoyé. Merci !</div>
+              </div>
+              <div class="text-center" ><button type="submit">Envoyer Message</button></div>
+            </form>
+<hr>
           </div>
 
         </div>
 
       </div>
-    </section><!-- End Trainers Section -->
+	</section><!-- End Contact Section -->
 
   </main><!-- End #main -->
 
